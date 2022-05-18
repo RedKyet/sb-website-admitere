@@ -1,19 +1,18 @@
 <?php
 // Start the session
 session_start();
-?>
-<html>
-  <head>
-    <title>PHP Test</title>
-  </head>
-  <body>
-
-<?php
 $username = $_SESSION["username"];
 $password = $_SESSION["password"];
 $id = $_SESSION["id"];
 ?>
-    <a href="index.php">login</a> <a href="register.php">register</a>
+<html>
+  <head>
+    <title>PHP Test</title>
+    <link href="nav.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+
+    
 <?php
 
 echo '<p>Hello User!</p>'; 

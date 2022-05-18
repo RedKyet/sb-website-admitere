@@ -2,10 +2,6 @@
 body {
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
-  background-image: url("https://previews.123rf.com/images/zven0/zven02006/zven0200600031/149257021-modern-white-background.jpg");
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-size: auto 200%;
 }
 
 .topnav {

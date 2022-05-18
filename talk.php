@@ -37,12 +37,11 @@ $path = 'userdata/convs';
   
   
 ?>
-    <a href="index.php">login</a> <a href="register.php">register</a>
+    
 <?php
 
 echo '<p>Hello User!</p>'; 
-$message = "Success! username: ".$username." password: ".$password;
-echo $message;
+
 echo "<p>talk ".$conv."</p>";
 ?> 
 

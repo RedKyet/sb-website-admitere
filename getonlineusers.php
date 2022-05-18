@@ -1,4 +1,16 @@
 <?php
+$username=$_GET["username"];
+$friends=[[]];
+$ppl=[];
+$path = 'userdata/friends/'.$username.'.txt';
+
+
+if(file_exists($path)){
+  $friends=json_decode(file_get_contents($path));
+for($i=0; $i<sizeof($friends); $i++){
+  $ppl[$i]=$friends[$i][0];
+}
+}
 
 $people=[];
 
@@ -12,7 +24,12 @@ foreach($files as $file){
 	$line = fgets($f);
 	fclose($f);
 	//$people[$count][0]=$line;
-	$people[$count]=pathinfo($file, PATHINFO_FILENAME);
+    $name=pathinfo($file, PATHINFO_FILENAME);
+    
+    if(!in_array($name, $ppl)){
+      $people[$count]=pathinfo($file, PATHINFO_FILENAME);
+    }
+	
 	}
 	
 }
