@@ -1,6 +1,7 @@
-<html>
-
-<body>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title> Harta Romaniei </title>
 <!--
 ************* Copyright (c) 2017 Pareto Softare, LLC DBA Simplemaps.com *******************		
 ************* Free for Commercial Use, full terms at  http://simplemaps.com/resources/svg-license ************
@@ -98,7 +99,5 @@
  <circle cx="416.9" cy="151.6" id="2">
  </circle>
 </svg>
-</body>
-
-  
+	</body>
 </html>
