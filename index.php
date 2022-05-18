@@ -49,7 +49,7 @@ session_start();
 <form method="post" class="login-form">
 
 <input id="user" type="text" class="button input" name="username" placeholder="Username" required/>
-<input id="pass" type="password" class="button input" placeholder="Password" required/>
+<input id="pass" type="password" class="button input" name="password" placeholder="Password" required/>
 <input type="submit" class="button" id="submit" name="lsubmit" value="Login"/>
  
     </form>
@@ -86,40 +86,25 @@ session_start();
 
 
 <script>
-var o = 0;
-document.getElementById('login-button').onclick = swap;
- 
 
-document.getElementById('login-button').addEventListener("mouseover" , function(){
 
-swap();
+
+//setInterval(ref,2000);
+  function ref(){
+    if(isOnDiv==1){
+    document.getElementById("overlay").style.display = "block";
+  }else{ 
+    document.getElementById("overlay").style.display = "none";
+  }
   
-});
-  
+}
 function swap(){
-  if(o==0){
-    o=1;
-  }else{
-    o=0;
-  }
+  isOnDiv=1-isOnDiv;
 }
-  setInterval
-function ref(){
-  if(o==0){
-    off();
-  }else{
-    on();
-  }
-}
+  isOnDiv=false;
+document.getElementById("login-button").addEventListener("click", function(  ) {swap();ref();});
 
-function on() {
-  document.getElementById("overlay").style.display = "block";
-}
 
-function off() {
-  o=0;
-  document.getElementById("overlay").style.display = "none";
-}
 </script>
   
 
