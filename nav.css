@@ -6,13 +6,13 @@ body {
 
 .topnav {
   overflow: hidden;
-  background-color: #333;
+  background-color: var(--mainDark);
 }
 
 .topnav a {
   float: left;
   display: block;
-  color: #f2f2f2;
+  color: var(--lightDark);
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
@@ -20,14 +20,14 @@ body {
 }
 
 .topnav a:hover {
-  background-color: #ddd;
+  background-color: var(--lightDark);
   color: black;
 }
 #login-button{
   cursor:pointer;
 }
 #overlay{
-  background-color: #333;
+  background-color: var(--mainDark);
   position: absolute;
   
   width: 18%;
@@ -70,7 +70,7 @@ body {
 }
 .login .sign-in:checked + .tab,
 .login .sign-up:checked + .tab{
-	color:#fff;
+	color:var(--lightBrown);
 }
 
 .form{
@@ -95,13 +95,13 @@ body {
   align-items: center;
   font-size: 0.875rem;
   font-weight: 600;
-  color: white;
+  color: var(--lightBrown);
   background: #b0b0b070;
   border: 2px solid;
   border-radius: 1rem;
   transition: transform 150ms ease;
   margin: auto;
   outline-color: #3545c0
-  border-color: #ffffff;
+  border-color: var(--lightBrown);
   position: relative;
 }

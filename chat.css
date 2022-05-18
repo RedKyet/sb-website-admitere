@@ -1,9 +1,9 @@
 #sidebar{
   
-  background-color: #333;
+  background-color: var(--darkBrown);
   position: absolute;
   width:30%;
-  height:300%;
+  height:100%;
 
   top: 50px;
   right: 0px;
@@ -12,7 +12,7 @@
   padding: 1rem 1rem;
   
   align-items: center;
-  background: rgba(51, 51, 51, 0.6);
+  
   box-shadow: 0px 30px 50px 0px rgba(0, 0, 0, 0.2);
   border-radius: 0.5rem;
   
@@ -22,10 +22,27 @@
 
 }
 p{
-  color:white;
+  color:var(--lightDark);
 }
 
 #demo{
-  height:50vh;
+  height:30vh;
   overflow:auto;
+}
+#fr{
+  height:20vh;
+  overflow:auto;
+}
+#users{
+  height:20vh;
+  overflow:auto;
+}
+.us1{
+  position:absolute;
+  left:0px;
+  width:80%
+}
+.us2{
+   position:absolute;
+  right:0px;
 }

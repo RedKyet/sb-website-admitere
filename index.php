@@ -13,6 +13,7 @@ require('chatsidebar.php');
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
     <link href="style.css" rel="stylesheet" type="text/css" />
+    <link href="harta.css" rel="stylesheet" type="text/css" />
     <link href="nav.css" rel="stylesheet" type="text/css" />
     <link href="chat.css" rel="stylesheet" type="text/css" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -233,58 +234,7 @@ document.getElementById("overlay").style.display = "none";
  
     </form>
 -->   
-<style>
-body{
-  background-image: url('graduates_cover_small.jpg');
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-size: contain;
-  background-size: auto 200%;
-}
-.has-uni {
-  fill: #00496d;
-}
-svg path{
-  fill: #00394;
-  stroke: #eee;
-  stroke-width: .25;
-}
-.has-uni:hover{
-  fill: #006284;
-  transition: 0.6s;
-  cursor: pointer;
-}
 
-
-#hidden-div {
-  width: 400px;
-  padding: 20px;
-  font-family: Arial, sans-serif;
-  font-size: 10pt;
-  background-color: white;
-  border-radius: 6px;
-  position: absolute;
-  display: none;
-  
-}
-
-#hidden-div::before {
-  
-  content: "";
-  width: 12px;
-  height: 12px;
-  transform: rotate(45deg);
-  background-color: white;
-  position: absolute;
-  left: -6px;
-  top: 68px;
-  transition: opacity 1s linear;
-}
-
-
-
-</style>
 
 <script>
   var myicon = document.getElementById("ROU315");
@@ -303,6 +253,8 @@ function showPopup(evt) {
 function hidePopup(evt) {
   mypopup.style.display = "none";
 }
+
+
 </script>
 
 <!-- LOC DE DAT CU CAPUL IN TASTATURA

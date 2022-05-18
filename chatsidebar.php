@@ -72,7 +72,7 @@ function makechat($status){
   if($status==0){
     return 0;
   }
-  echo '<div id="sidebar">hi';
+  echo '<div id="sidebar">';
   echo '<p>Hello User!</p>';
 
 echo "------";
@@ -86,8 +86,8 @@ END;
 
 print <<< END
 <form method="post" class="login-form">
-<input type="text" id="sms" name="sms" placeholder="Username" required/>
-<input type="submit" id="submit" name="submit" value="send"/>
+<input type="text" class="button" id="sms" name="sms" placeholder="SMS" required/>
+<input type="submit" class="button" id="submit" name="submit" value="send"/>
 </form>
 END;
 echo "------";
@@ -132,9 +132,9 @@ fetch('getonlineusers.php?username='+username)
     for(var i = 0; i<data.length; i++){
         if(data[i]!=username){
           string=string+'<li>';
-        string=string+'<form action="" method="post"> <input type="hidden" id="action" name="action" value="sms"><input type="hidden" id="id" name="id" value="'+data[i]+'"><input type="submit" class="overlay_btn4" name="button" value="'+data[i]+'"/></form><br>';
-  string=string+'<form action="" method="post"> <input type="hidden" id="action" name="action" value="add"><input type="hidden" id="fr" name="fr" value="'+data[i]+'"><input type="submit" class="overlay_btn4" name="button2" value="add"/></form>';
-  string=string+'<br>';
+        string=string+'<p><form action="" method="post" class="us1"> <input type="hidden" id="action" name="action" value="sms"><input type="hidden" id="id" name="id" value="'+data[i]+'"><input class="button" type="submit" class="overlay_btn4" name="button" value="'+data[i]+'"/></form>';
+  string=string+'<form action="" method="post" class="us2"> <input type="hidden" id="action" name="action" value="add"><input type="hidden" id="fr" name="fr" value="'+data[i]+'"><input type="submit" class="button" class="overlay_btn4" name="button2" value="add"/></form>';
+  string=string+'<br></p>';
   
         string=string+'</li>';
         }
@@ -161,7 +161,7 @@ fetch('getfriends.php?username='+username)
     for(var i = 0; i<data.length; i++){
         
           string=string+'<li>';
-        string=string+'<form action="" method="post"> <input type="hidden" id="action" name="action" value="sms"><input type="hidden" id="id" name="id" value="'+data[i][0]+'"><input type="submit" class="overlay_btn4" name="button" value="'+data[i][0]+'"/></form><br>';;
+        string=string+'<form action="" method="post"> <input type="hidden" id="action" name="action" value="sms"><input type="hidden" id="id" name="id" value="'+data[i][0]+'"><input class="button" type="submit" class="overlay_btn4" name="button" value="'+data[i][0]+'"/></form><br>';;
         string=string+'</li>';
         
     }
@@ -189,6 +189,7 @@ fetch('getmessages.php?name='+username+'&conv='+conv)
         string=string+data[i][0]+': '+data[i][1]+'<br>';
         
     }
+  string=string+'<div id="box"></div>';
     document.getElementById("demo").innerHTML = string;
   });
 }
@@ -196,7 +197,21 @@ fetch('getmessages.php?name='+username+'&conv='+conv)
 
   
 END;
-echo '<script>window.scrollTo(0, document.getElementById("demo").scrollHeight);</script>';
+print <<< END
+    <script>
+        document.addEventListener("DOMContentLoaded", function(event) { 
+            var scrollpos = localStorage.getItem('scrollpos');
+            if (scrollpos) window.scrollTo(0, scrollpos);
+        });
+
+        window.onbeforeunload = function(e) {
+            localStorage.setItem('scrollpos', window.scrollY);
+        };
+    </script>
+
+  
+END;
+
 }
 
 ?>
@@ -226,3 +241,8 @@ file_put_contents($path.$conv.'.txt', json_encode($sms));
 
 
 ?>
+
+<script>
+  var objDiv = document.getElementById("sidebar");
+  objDiv.scrollTop = objDiv.scrollHeight;
+</script>
