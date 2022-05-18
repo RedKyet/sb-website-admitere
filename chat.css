@@ -1,10 +1,12 @@
-#sidebar{
-  
-  background-color: var(--darkBrown);
-  position: absolute;
-  width:30%;
-  height:100%;
 
+#sidebar{
+  box-shadow: 0px 30px 50px 0px rgba(0, 0, 0, 0.2);
+  background-color: var(--mainDark);
+  position: absolute;
+  width:17%;
+  height:110%;
+
+    overflow: auto;
   top: 50px;
   right: 0px;
 
@@ -21,28 +23,41 @@
   z-index: 2;
 
 }
+#sidebar:hover{
+  transform: translateX(0px);
+}
 p{
   color:var(--lightDark);
 }
 
 #demo{
+  border-radius: 0.5rem;
+  background-color: var(--mediumDark);
   height:30vh;
   overflow:auto;
+  padding:5px;
 }
 #fr{
-  height:20vh;
+  border-radius: 0.5rem;
+  background-color: var(--mediumDark);
+  height:15vh;
   overflow:auto;
+  padding:5px;
 }
 #users{
-  height:20vh;
+  border-radius: 0.5rem;
+  background-color: var(--mediumDark);
+  height:15vh;
   overflow:auto;
+  padding:5px;
 }
 .us1{
   position:absolute;
-  left:0px;
-  width:80%
+  left:10px;
+  width:80%;
 }
 .us2{
    position:absolute;
-  right:0px;
+  right:10px;
+  width:20%;
 }

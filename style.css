@@ -1,6 +1,29 @@
-.bg-image{
-  background-image: url("https://storage0.dms.mpinteractiv.ro/media/401/341/5531/14692524/1/corneliu-vadim-tudor.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  :root{
+    --mainDark: #121715;
+    --mediumDark: #36393B;
+    --lightDark: #F3E8EE;
+    --lightBrown: #3eb7e0;
+    --darkBrown: #1a7999;
+  }
+/* width */
+::-webkit-scrollbar {
+  background: var(--mediumDark);
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px var(--lightDark); 
+  border-radius: 10px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--lightDark); 
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: var(--lightBrown); 
 }

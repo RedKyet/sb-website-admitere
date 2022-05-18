@@ -2,13 +2,13 @@
 //$string+='';
 function makenav($status, $name){
   //session_start();
-  
+  echo '<div class="bgimg"></div>';
   echo '<div class="up">';
   echo '<div class="topnav" id="myTopnav">
-  <a href="#home" class="active">Home</a>
-  <a href="#news">News</a>
-  <a href="#contact">Contact</a>
-  <a href="#about">About</a>
+  <a href="index.php" class="active">Home</a>
+  <a href="news.php">News</a>
+  <a href="contact.php">Contact</a>
+  <a href="about.php">About</a>
   <a id="login-button">';
   if($status==0){
     echo 'Login';
@@ -63,7 +63,29 @@ if($status==0){
 
 
 echo '</div>';
+print <<< END
+<script>
 
+
+
+//r.style.setProperty('--mainDark', '#F3E8EE');
+  function ref(){
+    if(isOnDiv==1){
+    document.getElementById("overlay").style.display = "block";
+  }else{ 
+    document.getElementById("overlay").style.display = "none";
+  }
+  
+}
+function swap(){
+  isOnDiv=1-isOnDiv;
+}
+  isOnDiv=false;
+document.getElementById("login-button").addEventListener("click", function(  ) {swap();ref();});
+
+
+</script>
+END;
 }
 ?>
 <?php

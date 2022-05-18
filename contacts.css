@@ -1,0 +1,112 @@
+:root{
+    --mainDark: #121715;
+    --mediumDark: #36393B;
+    --lightDark: #F3E8EE;
+    --lightBrown: #3eb7e0;
+    --darkBrown: #1a7999;
+  }
+
+#contacts {
+  
+  display: inline-block;
+  position:relative;
+  
+  
+  margin:10%;
+
+  background-color:var(--mainDark);
+  padding:5%;
+  border-radius: 0.5rem;
+  
+}
+
+#contacts a {
+  color:var(--lightDark);
+  background: var(--darkBrown);
+  border-radius:4px;
+  text-align:center;
+  text-decoration:none;
+  font-family:fontawesome;
+  position: relative;
+  display: inline-block;
+  width:40px;
+  height:28px;
+  padding-top:12px;
+  margin:0 2px;
+  -o-transition:all .5s;
+  -webkit-transition: all .5s;
+  -moz-transition: all .5s;
+  transition: all .5s;
+   -webkit-font-smoothing: antialiased;
+}
+
+#contacts a:hover {
+  background: var(--lightBrown);
+}
+
+
+
+#contacts a span {
+  color:#666;
+  position:absolute;
+  font-family:sans-serif;
+  bottom:0;
+  left:-25px;
+  right:-25px;
+  padding:5px 7px;
+  z-index:100;
+  font-size:14px;
+  border-radius:2px;
+  background:#fff;
+  visibility:hidden;
+  opacity:0;
+  -o-transition:all .01s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  -webkit-transition: all .01s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  -moz-transition: all .01s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  transition: all .01s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+
+
+#contacts a span:before {
+  content:'';
+  width: 0; 
+  height: 0; 
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 5px solid #fff;
+  position:absolute;
+  bottom:-5px;
+  left:40px;
+}
+
+
+
+#contacts a:hover span {
+  bottom:50px;
+  visibility:visible;
+  opacity:1;
+}
+
+
+
+#contacts a:nth-of-type(1):before {
+content:'\f09a';
+}
+#contacts a:nth-of-type(2):before {
+content:'\f099';
+}
+#contacts a:nth-of-type(3):before {
+content:'\f16d';
+}
+#contacts a:nth-of-type(4):before {
+content:'\f113';
+}
+#contacts a:nth-of-type(5):before {
+content:'\f167';
+}
+#contacts a:nth-of-type(6):before {
+content:'\f2ab';
+}
+
+

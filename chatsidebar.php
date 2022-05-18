@@ -66,9 +66,13 @@ $path = 'userdata/friends/';
 }
 
 ?>
+
 <?php
 
-function makechat($status){
+function makechat($status,$do){
+  if($do==1){
+    return 0;
+  }
   if($status==0){
     return 0;
   }
@@ -76,12 +80,13 @@ function makechat($status){
   echo '<p>Hello User!</p>';
 
 echo "------";
- echo "<p>talk ".$_SESSION["conv"]."</p>"; 
+ echo "<p>Your conv with ".$_SESSION["talk"]."</p>"; 
 
 print <<< END
 
-<p id="demo">sms</p>
+<div id="demo" class="demo"></div>
 END;
+
 
 
 print <<< END
@@ -93,9 +98,9 @@ END;
 echo "------";
   echo '<p>Hello User!</p>
 <p>Online Users</p>
-<p id="users">Online Users</p>
+<p id="users"></p>
 <p>friends</p>
-<p id="fr">Online Users</p>';
+<p id="fr"></p>';
 echo '</div>';
 
 
@@ -120,6 +125,7 @@ fetch("online.php?username="+username)
 
 print <<< END
 <script>
+onlineusers();
 setInterval(onlineusers,1000);
 function onlineusers(){
   var user='<?php echo $username; ?>';
@@ -132,9 +138,9 @@ fetch('getonlineusers.php?username='+username)
     for(var i = 0; i<data.length; i++){
         if(data[i]!=username){
           string=string+'<li>';
-        string=string+'<p><form action="" method="post" class="us1"> <input type="hidden" id="action" name="action" value="sms"><input type="hidden" id="id" name="id" value="'+data[i]+'"><input class="button" type="submit" class="overlay_btn4" name="button" value="'+data[i]+'"/></form>';
+        string=string+'<form action="" method="post" class="us1"> <input type="hidden" id="action" name="action" value="sms"><input type="hidden" id="id" name="id" value="'+data[i]+'"><input class="button" type="submit" class="overlay_btn4" name="button" value="'+data[i]+'"/></form>';
   string=string+'<form action="" method="post" class="us2"> <input type="hidden" id="action" name="action" value="add"><input type="hidden" id="fr" name="fr" value="'+data[i]+'"><input type="submit" class="button" class="overlay_btn4" name="button2" value="add"/></form>';
-  string=string+'<br></p>';
+  string=string+'<br>';
   
         string=string+'</li>';
         }
@@ -148,6 +154,7 @@ END;
 //firends
 print <<< END
 <script>
+fr();
 setInterval(fr,1000);
 function fr(){
 
@@ -175,6 +182,7 @@ print <<< END
 
 <script>
   sms();
+  var x = 0;
 setInterval(sms,1000);
 function sms(){
 
@@ -186,11 +194,22 @@ fetch('getmessages.php?name='+username+'&conv='+conv)
     
     for(var i = 0; i<data.length; i++){
         
-        string=string+data[i][0]+': '+data[i][1]+'<br>';
+        string=string+'<p>'+data[i][0]+': '+data[i][1]+'</p>';
         
     }
   string=string+'<div id="box"></div>';
     document.getElementById("demo").innerHTML = string;
+  //
+		if(x==0){
+  let scroll_to_bottom = document.getElementById("demo");
+		function scrollBottom(element) {
+			element.scroll({ top: element.scrollHeight})
+		}
+
+		scrollBottom(scroll_to_bottom);
+  x=1;
+    }
+	//
   });
 }
 </script>
@@ -241,8 +260,18 @@ file_put_contents($path.$conv.'.txt', json_encode($sms));
 
 
 ?>
-
+<!--
+<style>
+#demo{
+  height: 100px;
+  overflow: auto;
+  display: flex;
+  flex-direction: column-reverse;
+  }
+</style>-->
 <script>
-  var objDiv = document.getElementById("sidebar");
-  objDiv.scrollTop = objDiv.scrollHeight;
+  let scroll_to_bottom = document.getElementById("demo");
+		scroll_to_bottom.scrollIntoView(false);
 </script>
+
+

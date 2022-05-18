@@ -1,4 +1,10 @@
-
+  :root{
+    --mainDark: #121715;
+    --mediumDark: #36393B;
+    --lightDark: #F3E8EE;
+    --lightBrown: #3eb7e0;
+    --darkBrown: #1a7999;
+  }
 body {
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
@@ -21,10 +27,12 @@ body {
 
 .topnav a:hover {
   background-color: var(--lightDark);
-  color: black;
+  color: var(--mainDark);
 }
 #login-button{
   cursor:pointer;
+  position: absolute;
+  right:5%;
 }
 #overlay{
   background-color: var(--mainDark);
@@ -33,19 +41,19 @@ body {
   width: 18%;
   height: 25%;
   top: 50px;
-  left: 150px;
+  right:5%;
 
   display: none;
   padding: 1rem 1rem;
   
   align-items: center;
-  background: rgba(51, 51, 51, 0.6);
+  
   box-shadow: 0px 30px 50px 0px rgba(0, 0, 0, 0.2);
   border-radius: 0.5rem;
   
   border: 1px solid rgba(255, 255, 255, 0.125);
   backdrop-filter: blur(2px);
-  z-index: 2;
+  z-index: 1000;
   cursor: pointer;
 }
 
@@ -66,7 +74,12 @@ body {
 }
 .login .sign-in,
 .login .sign-up{
+  color:var(--lightDark);
 	display:none;
+}
+.login .sign-in + .tab,
+.login .sign-up + .tab{
+	color:var(--lightDark);
 }
 .login .sign-in:checked + .tab,
 .login .sign-up:checked + .tab{
@@ -88,6 +101,7 @@ body {
 }
 
 .button{
+  
   width: 90%;
   height: 2.5rem;
   display: flex;
@@ -95,13 +109,13 @@ body {
   align-items: center;
   font-size: 0.875rem;
   font-weight: 600;
-  color: var(--lightBrown);
+  color: var(--lightDark);
   background: #b0b0b070;
   border: 2px solid;
-  border-radius: 1rem;
+  border-radius: 0.5rem;
   transition: transform 150ms ease;
-  margin: auto;
+  margin:10px;
   outline-color: #3545c0
-  border-color: var(--lightBrown);
+  border-color: var(--lightDark);
   position: relative;
 }
