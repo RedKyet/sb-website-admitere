@@ -58,26 +58,5 @@ fetch('getonlineusers.php')
 }
   
 </script>
-
-<?php
-if (isset($_POST['button3'])) {
-  $talk=$_POST['button'];
-  //get conv id
-  for($i = 0; $i < $count; $i++){
-    if($users[$i][0]==$talk){
-      $talkid = $i;
-    }
-    
-  }
-$conv=min($id,$talkid).max($id,$talkid);
-  //
-  echo $conv;
-$path = 'userdata/convs/';
-  if (!file_exists($path)) {
-    mkdir($path, 0777, true);
-  }
-}
-
-?>
   </body>
 </html>

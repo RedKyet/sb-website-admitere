@@ -7,8 +7,10 @@ session_start();
     <title>PHP Test</title>
   </head>
   <body>
-    <a href="index.php">login</a> <a href="register.php">register</a>
-    <?php session_start(); echo '<p>Hello Login</p>'; ?> 
+    <a href="index.php">login</a>
+    <a href="register.php">register</a>
+    <?php echo '<p>Hello Login</p>'; ?> 
+    
     <form method="post" class="login-form">
 
 <input type="text" id="username" name="username" placeholder="Username" required/>
@@ -18,15 +20,10 @@ session_start();
     </form>
 
 <?php
-
 $message = "";
 if(isset($_POST['submit'])){
   $username = $_POST['username'];
   $password = $_POST['password'];
-
-
-
-  
   //make user
   $path = 'userdata/';
   if (!file_exists($path)) {
@@ -47,17 +44,12 @@ if(isset($_POST['submit'])){
       $exists = 1;
       $_SESSION["id"] = $i;
     }
-    
   }
-  
   if($exists==1){
     //make new user
     echo "user exists";
-    
     $_SESSION["username"] = $username;
     $_SESSION["password"] = $password;
-    
-
     echo ' <meta http-equiv="refresh" content="0;url=user.php">';
   }else{
     echo "user doesnt exist";
@@ -66,5 +58,7 @@ if(isset($_POST['submit'])){
   $message = "Success! username: ".$username." password: ".$password." ".$count;
   //echo $message;
 ?>
+
+    
   </body>
 </html>
