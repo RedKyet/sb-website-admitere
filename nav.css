@@ -27,6 +27,9 @@ body {
   background-color: #ddd;
   color: black;
 }
+#login-button{
+  cursor:pointer;
+}
 #overlay{
   background-color: #333;
   position: absolute;

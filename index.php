@@ -25,7 +25,7 @@ session_start();
   <a href="#news">News</a>
   <a href="#contact">Contact</a>
   <a href="#about">About</a>
-  <a id="foo">Login
+  <a id="login-button">Login
     
   
   </a>
@@ -87,24 +87,37 @@ session_start();
 
 <script>
 var o = 0;
-document.getElementById('foo').onclick = swap;
+document.getElementById('login-button').onclick = swap;
+ 
 
+document.getElementById('login-button').addEventListener("mouseover" , function(){
+
+swap();
+  
+});
+  
 function swap(){
   if(o==0){
     o=1;
-    on();
   }else{
     o=0;
-    off();
   }
 }
-
+  setInterval
+function ref(){
+  if(o==0){
+    off();
+  }else{
+    on();
+  }
+}
 
 function on() {
   document.getElementById("overlay").style.display = "block";
 }
 
 function off() {
+  o=0;
   document.getElementById("overlay").style.display = "none";
 }
 </script>
@@ -112,7 +125,9 @@ function off() {
 
 
     
-
+    
+    <a href="index.php">login</a>
+    <a href="register.php">register</a>
     
     
     
