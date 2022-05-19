@@ -25,8 +25,8 @@ body {
 }
 #login-button{
   cursor:pointer;
-  position: absolute;
-  right:5%;
+  
+  
 }
 #overlay{
   background-color: var(--mainDark);
@@ -35,7 +35,7 @@ body {
   width: 10%;
   height: 25%;
   top: 50px;
-  right:5%;
+  left:25%;
 
   display: none;
   

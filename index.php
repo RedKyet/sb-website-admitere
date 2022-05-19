@@ -9,7 +9,7 @@ require('chatsidebar.php');
 ?>
 <html>
   <head>
-    <title>PHP Test</title>
+    <title>Univesity Finder</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
     <link href="style.css" rel="stylesheet" type="text/css" />
@@ -223,51 +223,6 @@ document.getElementById("overlay").style.display = "none";
 
 
 
-  <h1 class="text">
-
-1. Şcoala însemnează ordine şi chibzuinţă de fiecare clipă. Simion Mehedinţi<br>
-
-2. Şcoala este un iad unde elevii se simt ca-n rai. Janet Nică<br>
-
-3. Şcoala trebuie să urmărească tot timpul că tânărul să părăsească băncile ei nu ca specialist, ci ca o personalitate armonioasă. Albert Einstein<br>
-
-4. Şcoala vieţii este singura instituţie privată care nu necesită acreditare. Teodor Dume<br>
-
-5. Nu spun că şcoala nu e bună. E foarte bună. Cât timp te duci la şcoală ca să înveţi ceva ce îţi place şi să foloseşti aceste lucruri în viaţă ca să obţii ce vrei. Pera Novacovici<br>
-
-6. Şcoala îţi dă uneori temelia casei şi uneori numai învăţătura cum nu se clădeşte o temelie. Nicolae Iorga<br>
-
-7. O şcoală bună rumegă gândirea altora, nu o memorează. Vasile Ghica<br>
-
-8. O şcoală care să corespundă perfect ţinutei sale e o adevărată insituţie pentru cultivarea omului. John Amos Comenius<br>
-
-9. Cel ce deschide o şcoală închide o temniţă. Victor Hugo<br>
-
-10. Şcoala trebuie adaptată la copii şi nu copiii adaptaţi şcolilor. Alexander Sutherland<br>
-
-11. Acolo unde şcolile prosperă, totul prosperă. Martin Luther<br>
-
-12. Cusururile necombătute în timpul şcolii devin vicii în viaţa omului. Honoré de Balzac<br>
-
-13. Caracterul însă al unei şcoli bune e ca elevul să înveţe în ea mai mult decât i se predă, mai mult decât ştie însuşi profesorul. Mihai Eminescu<br>
-
-14. Îţi trimiţi copilul la şcoală, dar colegii lui vor fi cei care îl vor educa. Ralph Waldo Emerson<br>
-
-15. Şcoala este locul unde copilăria se termină în fiecare zi. Costel Zăgan<br>
-
-16. La şcoală, elevii ar trebui să înveţe cum să se orienteze corect şi să acţioneze eficient pe câmpul de luptă al vieţii! Elena Stan<br>
-
-17. Şcoala trebuie să te înveţe a fi propriul tău dascăl, cel mai bun şi cel mai aspru. Nicolae Iorga<br>
-
-18. Nu zidurile fac o şcoală, ci spiritul ce domneşte într-însa. Regele Ferdinand I<br>
-
-19. Fără şcoală să nu aştepte nimeni nici părinţi buni, nici fii buni, şi prin urmare nici stat bine organizat şi bine cârmuit şi păstorit. Ion Heliade Rădulescu<br>
-
-20. Încercarea şi când nu reuşeşte e o şcoală. George Coşbuc<br>
-
-21. Fără școală mori de foame. lazăr<br>
-    
-  </h1>
   </body>
 </html>
 

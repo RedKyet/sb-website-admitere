@@ -106,22 +106,3 @@ foreach($files as $file){
 
   </body>
 </html>
-<!--<p>Lazar Dragos</p>
-<div id="contacts">
-  <a href="#"><span>Facebook</span></a>
-  <a href="#"><span>Twitter</span></a>
-  <a href="#"><span>Google+</span></a>
-  <a href="#"><span>Github</span></a>
-  <a href="#"><span>Dribbble</span></a>
-  <a href="#"><span>CodePen</span></a>
-</div>
-<p>Teodor Moscaliuc</p>
-<div id="contacts">
-  <a href="#"><span>Facebook</span></a>
-  <a href="#"><span>Twitter</span></a>
-  <a href="#"><span>Google+</span></a>
-  <a href="#"><span>Github</span></a>
-  <a href="#"><span>Dribbble</span></a>
-  <a href="#"><span>CodePen</span></a>
-</div>
--->

@@ -9,7 +9,7 @@ require('chatsidebar.php');
 ?>
 <html>
   <head>
-    <title>PHP Test</title>
+    <title>Contact</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
     <link href="style.css" rel="stylesheet" type="text/css" />
@@ -36,7 +36,7 @@ require('chatsidebar.php');
   <a href="https://www.instagram.com/monsieurproductions/"><span>Instagram</span></a>
   <a href="https://github.com/MonsieurLazar"><span>Github</span></a>
   <a href="https://www.youtube.com/channel/UCQR8OSRpq7mcC__QrfN961A"><span>Youtube</span></a>
-  <a href="https://www.youtube.com/watch?v=q3WC-X7xDNo&ab_channel=DayofMemes"><span>Snapchat</span></a>
+  
 </div>
 <div id="contacts" >
   <p>Moscaliuc Teodor</p>
@@ -45,7 +45,7 @@ require('chatsidebar.php');
   <a href="https://www.instagram.com/o_mata_rosie/"><span>Instagram</span></a>
   <a href="https://github.com/RedKyet"><span>Github</span></a>
   <a href="https://www.youtube.com/channel/UClQCXV8uoOvN32HaqLDCIoA"><span>Youtube</span></a>
-  <a href="https://www.youtube.com/watch?v=q3WC-X7xDNo&ab_channel=DayofMemes"><span>Snapchat</span></a>
+  
 </div>
 
   
