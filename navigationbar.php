@@ -8,6 +8,8 @@ function makenav($status, $name){
 
   <a href="index.php" class="active">Home</a>
   <a href="news.php">News</a>
+<a href="https://www.bibnat.ro/Biblioteca-Digitala-Nationala-s135-ro.htm">Carti</a>
+<a href="https://www.youtube.com/watch?v=_4kHxtiuML0&ab_channel=GreenredProductions-RelaxingMusic">Faci tema la mate?</a>
   <a href="contact.php">Contact</a>
   <a href="about.php">About</a>
   <a id="login-button">';
@@ -61,7 +63,10 @@ if($status==0){
   }
 echo '<form method="post" class="logout-form">
 <input type="submit" class="button" id="submit" name="data" value="Data"/>
-    </form>';			
+    </form>';	
+  echo '<form method="post" class="logout-form">
+<input type="submit" class="button" id="submit" name="secret" value="Secret"/>
+    </form>';	
 echo '<form method="post" class="logout-form">
 <input type="submit" class="button" id="submit" name="osubmit" value="Log out"/>
     </form>';
@@ -103,7 +108,7 @@ END;
 }
 ?>
 <?php
-$message = "";
+
 if(isset($_POST['lsubmit'])){
   $username = $_POST['username'];
   $password = $_POST['password'];
@@ -122,21 +127,30 @@ if(isset($_POST['lsubmit'])){
   }
   //check user exists
   $exists = 0;
+  $pass=0;
   for($i = 0; $i < $count; $i++){
     if($users[$i][0]==$username){
       $exists = 1;
       $_SESSION["id"] = $i;
+      if($users[$i][1]!=$password){
+      $pass=1;
+      $exists = 0;
+    }
     }
   }
   if($exists==1){
     //make new user
-    echo "user exists";
+    echo "Found your user!";
     $_SESSION["username"] = $username;
     $_SESSION["password"] = $password;
     $_SESSION["status"] = 1;
     echo ' <meta http-equiv="refresh" content="0">';
   }else{
-    echo "user doesnt exist";
+    if($pass==1){
+      echo "Wrong password!";
+    }else{
+      echo "Can't find user. Please sign-up!";
+    }
   }
 }   
   
@@ -169,7 +183,7 @@ if(isset($_POST['rsubmit'])){
   $exists = 0;
   for($i = 0; $i < $count; $i++){
     if($users[$i][0]==$username){
-      echo"exists";
+      echo"User already exists. PLease log-in!";
       $exists = 1;
     }
     
@@ -239,7 +253,20 @@ if(isset($_POST['data'])){
     echo ' <meta http-equiv="refresh" content="0 url=data.php">';
 
 }   
-  
 
 ?>
 
+        <?php
+if(isset($_POST['secret'])){
+
+
+  
+ 
+    
+    
+    echo ' <meta http-equiv="refresh" content="0 url=https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley">';
+
+}   
+  
+
+?>

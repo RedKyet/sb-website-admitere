@@ -1,6 +1,25 @@
 var dictcodes = {
   "Galati": "ROU315",
-  "Bacau": "ROU312"
+  "Bacau": "ROU312",
+  "Alba Iulia": "ROU294",
+  "Arad": "ROU276",
+  "Brasov": "ROU305",
+  "Bucuresti": "ROU128",
+  "Cluj Napoca": "ROU296",
+  "Constanta": "ROU133",
+  "Craiova": "ROU122",
+  "Iasi": "ROU308",
+  "Oradea": "ROU277",
+  "Petrosani": "ROU297",
+  "Pitesti": "ROU302",
+  "Ploiesti": "ROU310",
+  "Resita": "ROU278",
+  "Sibiu": "ROU303",
+  "Suceava": "ROU311",
+  "Targoviste": "ROU130",
+  "Targu Jiu": "ROU123",
+  "Targu Mures": "ROU299",
+  "Timisoara": "ROU280"
 };
 function showdiv(jud){
 var myicon = document.getElementById(dictcodes[jud]);

@@ -84,7 +84,7 @@ function makechat($status,$do){
   echo '<div id="sidebar">';
   echo '<p>Hello User!</p>';
 
-echo "------";
+//echo "------";
  echo "<p>Your conv with ".$_SESSION["talk"]."</p>"; 
 
 print <<< END
@@ -100,7 +100,7 @@ print <<< END
 <input type="submit" class="button" id="submit" name="submit" value="send"/>
 </form>
 END;
-echo "------";
+//echo "------";
   echo '<p>Hello User!</p>
 <p>Online Users</p>
 <p id="users"></p>

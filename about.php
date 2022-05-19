@@ -27,8 +27,8 @@ require('chatsidebar.php');
 <h1 class="text">About</h1>
 <div class="glass">
 
-<p>ne am spart capoul</p>
-  <p>x��u&�o�)�!�/b89H�(�l�r�p���</p>
+<p>copyright lattek 2022</p>
+
   
 </div
 

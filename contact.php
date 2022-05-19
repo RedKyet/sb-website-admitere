@@ -30,22 +30,22 @@ require('chatsidebar.php');
 <h1 class="text">Contact</h1>
 
 <div id="contacts" >
-  <p>Lazar Dragos</p>
-  <a href="#"><span>Facebook</span></a>
-  <a href="#"><span>Twitter</span></a>
-  <a href="#"><span>Instagram</span></a>
-  <a href="#"><span>Github</span></a>
-  <a href="#"><span>Youtube</span></a>
-  <a href="#"><span>Snapchat</span></a>
+  <p>Lazăr Dragoș George</p>
+  <a href="https://www.independent.co.uk/tech/facebook-privacy-leak-mark-zuckerberg-documents-friends-a8872111.html"><span>Facebook</span></a>
+  <a href="https://twitter.com/monsieurlazar"><span>Twitter</span></a>
+  <a href="https://www.instagram.com/monsieurproductions/"><span>Instagram</span></a>
+  <a href="https://github.com/MonsieurLazar"><span>Github</span></a>
+  <a href="https://www.youtube.com/channel/UCQR8OSRpq7mcC__QrfN961A"><span>Youtube</span></a>
+  <a href="https://www.youtube.com/watch?v=q3WC-X7xDNo&ab_channel=DayofMemes"><span>Snapchat</span></a>
 </div>
 <div id="contacts" >
-  <p>mocaliuc scrie aci datele tale</p>
-  <a href="#"><span>Facebook</span></a>
-  <a href="#"><span>Twitter</span></a>
-  <a href="#"><span>Instagram</span></a>
-  <a href="#"><span>Github</span></a>
-  <a href="#"><span>Youtube</span></a>
-  <a href="#"><span>Snapchat</span></a>
+  <p>Moscaliuc Teodor</p>
+  <a href="https://www.independent.co.uk/tech/facebook-privacy-leak-mark-zuckerberg-documents-friends-a8872111.html"><span>Facebook</span></a>
+  <a href="https://github.com/MonsieurLazar"><span>Twitter</span></a>
+  <a href="https://www.instagram.com/o_mata_rosie/"><span>Instagram</span></a>
+  <a href="https://github.com/RedKyet"><span>Github</span></a>
+  <a href="https://www.youtube.com/channel/UClQCXV8uoOvN32HaqLDCIoA"><span>Youtube</span></a>
+  <a href="https://www.youtube.com/watch?v=q3WC-X7xDNo&ab_channel=DayofMemes"><span>Snapchat</span></a>
 </div>
 
   
