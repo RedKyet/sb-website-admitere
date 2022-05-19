@@ -24,10 +24,10 @@ require('chatsidebar.php');
   
 <?php makenav($_SESSION["status"],$_SESSION["username"]); ?>
 <?php makechat($_SESSION["status"],0); ?>
-<h1 class="text">About</h1>
-<div class="glass">
+<h1 class="text">News</h1>
+<div style="margin:10%;height:20%;width:30%;background-color:var(--mainDark);padding:5%;">
 
-<p>ne am spart capoul</p>
+<p>ne am spart capoul STIRI</p>
   <p>x��u&�o�)�!�/b89H�(�l�r�p���</p>
   
 </div

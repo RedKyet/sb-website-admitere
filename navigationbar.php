@@ -2,9 +2,10 @@
 //$string+='';
 function makenav($status, $name){
   //session_start();
-  echo '<div class="bgimg"></div>';
+  //echo '<div class="bgimg"></div>';
   echo '<div class="up">';
   echo '<div class="topnav" id="myTopnav">
+
   <a href="index.php" class="active">Home</a>
   <a href="news.php">News</a>
   <a href="contact.php">Contact</a>
@@ -47,17 +48,30 @@ if($status==0){
 	</div>
 </div>';
   }else{
-  echo '<div id="overlay">
+  echo '<div id="overlay">';
  
-	
-			
-<form method="post" class="logout-form">
-
+	 if($_SESSION["mes"]==1){
+    echo '<form method="post" class="logout-form">
+<input type="submit" class="button" id="submit" name="hsubmit" value="Hide Messaging"/>
+    </form>';
+  }else{
+    echo '<form method="post" class="logout-form">
+<input type="submit" class="button" id="submit" name="h2submit" value="Show Messeging"/>
+    </form>';
+  }
+echo '<form method="post" class="logout-form">
+<input type="submit" class="button" id="submit" name="data" value="Data"/>
+    </form>';			
+echo '<form method="post" class="logout-form">
 <input type="submit" class="button" id="submit" name="osubmit" value="Log out"/>
-    </form>
+    </form>';
+ 
+
+
+
     
 		
-</div>';
+echo '</div>';
   }
 
 
@@ -120,7 +134,7 @@ if(isset($_POST['lsubmit'])){
     $_SESSION["username"] = $username;
     $_SESSION["password"] = $password;
     $_SESSION["status"] = 1;
-    echo ' <meta http-equiv="refresh" content="0;url=index.php">';
+    echo ' <meta http-equiv="refresh" content="0">';
   }else{
     echo "user doesnt exist";
   }
@@ -180,7 +194,49 @@ if(isset($_POST['osubmit'])){
     $_SESSION["username"] = '';
     $_SESSION["password"] = '';
     $_SESSION["status"] = 0;
-    echo ' <meta http-equiv="refresh" content="0;url=index.php">';
+    echo ' <meta http-equiv="refresh" content="0">';
+
+}   
+  
+
+?>
+    <?php
+if(isset($_POST['hsubmit'])){
+
+
+  
+ 
+    
+    $_SESSION["mes"] = 0;
+    echo ' <meta http-equiv="refresh" content="0">';
+
+}   
+  
+
+?>
+      <?php
+if(isset($_POST['h2submit'])){
+
+
+  
+ 
+    
+    $_SESSION["mes"] = 1;
+    echo ' <meta http-equiv="refresh" content="0">';
+
+}   
+  
+
+?>
+        <?php
+if(isset($_POST['data'])){
+
+
+  
+ 
+    
+    
+    echo ' <meta http-equiv="refresh" content="0 url=data.php">';
 
 }   
   

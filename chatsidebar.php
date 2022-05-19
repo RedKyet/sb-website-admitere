@@ -1,6 +1,10 @@
 <?php
 // Start the session
 session_start();
+//echo $_SESSION["mes"];
+//if($_SESSION["status"]==0){
+//  $_SESSION["mes"]=0;
+//}
 ?>
 <?php
 
@@ -70,7 +74,8 @@ $path = 'userdata/friends/';
 <?php
 
 function makechat($status,$do){
-  if($do==1){
+  if($_SESSION["mes"]==0){
+    
     return 0;
   }
   if($status==0){

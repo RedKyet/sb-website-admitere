@@ -26,8 +26,8 @@ require('chatsidebar.php');
 <?php makenav($_SESSION["status"],$_SESSION["username"]); ?>
 <?php makechat($_SESSION["status"],0); ?>
 
-
-
+  
+<h1 class="text">Contact</h1>
 
 <div id="contacts" >
   <p>Lazar Dragos</p>

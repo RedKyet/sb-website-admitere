@@ -1,10 +1,4 @@
-:root{
-    --mainDark: #121715;
-    --mediumDark: #36393B;
-    --lightDark: #F3E8EE;
-    --lightBrown: #3eb7e0;
-    --darkBrown: #1a7999;
-  }
+
 
 #contacts {
   
@@ -108,5 +102,4 @@ content:'\f167';
 #contacts a:nth-of-type(6):before {
 content:'\f2ab';
 }
-
 
