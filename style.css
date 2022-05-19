@@ -25,13 +25,14 @@
 
 
 .text {
+  font-size: 5vw;
 	text-transform: uppercase;
 	background: linear-gradient(to right, var(--mainDark) 0%, var(--mediumDark) 100%);
 	-webkit-background-clip: text;
   text-align: center;
 	-webkit-text-fill-color: transparent;
 	font: {
-		size: 90vw;
+		
 		family: 'Poppins', sans-serif;
 	};
 }

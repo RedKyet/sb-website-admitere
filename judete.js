@@ -24,7 +24,7 @@ var dictcodes = {
 function showdiv(jud){
 var myicon = document.getElementById(dictcodes[jud]);
 var mypopup = document.getElementById(jud+"-div");
-document.write("<style>#"+jud+"-div{width: 400px;padding: 20px;font-family: Arial, sans-serif;font-size: 10pt;background-color: var(--darkBrown);border-radius: 6px;position: absolute;display: none;}#"+jud+"-div::before {width: 12px;height: 12px;transform: rotate(45deg);background-color: var(--lightBrown);position: absolute;left: -6px;top: 68px;transition: opacity 1s linear;}</style>");
+document.write("<style>#"+jud+"-div{border:5px black;width: 400px;padding: 20px;font-family: Arial, sans-serif;font-size: 10pt;background-color: var(--darkBrown);border-radius: 6px;position: absolute;display: none;}#"+jud+"-div::before {border:5px black;width: 12px;height: 12px;transform: rotate(45deg);background-color: var(--lightBrown);position: absolute;left: -6px;top: 68px;transition: opacity 1s linear;}</style>");
 myicon.addEventListener("mouseover", showPopup);
 myicon.addEventListener("mouseout", hidePopup);
 

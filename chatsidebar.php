@@ -82,7 +82,7 @@ function makechat($status,$do){
     return 0;
   }
   echo '<div id="sidebar">';
-  echo '<p>Hello User!</p>';
+  echo '<p>Talk with an expert</p>';
 
 //echo "------";
  echo "<p>Your conv with ".$_SESSION["talk"]."</p>"; 
@@ -104,7 +104,7 @@ END;
   echo '<p>Hello User!</p>
 <p>Online Users</p>
 <p id="users"></p>
-<p>friends</p>
+<p>Friends</p>
 <p id="fr"></p>';
 echo '</div>';
 
