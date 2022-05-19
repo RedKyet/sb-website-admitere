@@ -5,7 +5,7 @@ var dictcodes = {
   "Arad": "ROU276",
   "Brasov": "ROU305",
   "Bucuresti": "ROU128",
-  "Cluj Napoca": "ROU296",
+  "Cluj_Napoca": "ROU296",
   "Constanta": "ROU133",
   "Craiova": "ROU122",
   "Iasi": "ROU308",

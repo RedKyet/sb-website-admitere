@@ -207,8 +207,8 @@ document.getElementById("overlay").style.display = "none";
 </div>
   <div id="Bucuresti-div">
   <h3>Universitatea din București</h3>
-  <p>Universitatea din București este o universitate de stat din București și una dintre cele mai prestigioase instituții de învățământ superior din România. Fondată în 1864, Universitatea din București este a doua universitate modernă a României, după Universitatea din Iași. Mai mulți absolvenți ai Universității s-au afirmat ca personalități de seamă: profesori și cercetători la alte universități din lume, membri ai Academiei Române și ai unor academii din alte țări, scriitori, politicieni (parlamentari, miniștri, prim-miniștri, președinți), diplomați etc. O parte din facultățile Universității sunt amplasate în Palatul Universității din Piața Universității. </p>
-    <div id="Cluj Napoca-div">
+  <p>Universitatea din București este o universitate de stat din București și una dintre cele mai prestigioase instituții de învățământ superior din România. Fondată în 1864, Universitatea din București este a doua universitate modernă a României, după Universitatea din Iași. Mai mulți absolvenți ai Universității s-au afirmat ca personalități de seamă: profesori și cercetători la alte universități din lume, membri ai Academiei Române și ai unor academii din alte țări, scriitori, politicieni (parlamentari, miniștri, prim-miniștri, președinți), diplomați etc. O parte din facultățile Universității sunt amplasate în Palatul Universității din Piața Universității. </p></div>
+    <div id="Cluj_Napoca-div">
   <h3>Universitatea Babeș-Bolyai</h3>
   <p>Universitatea Babeș-Bolyai (adesea abreviat UBB; în maghiară Babeș-Bolyai Tudományegyetem; în germană Babeș-Bolyai Universität) este o instituție de învățământ superior de stat, cu sediul în Cluj-Napoca, în Sediul Universității.[5] Poartă numele a doi oameni de știință proeminenți din Transilvania, microbiologul Victor Babeș și matematicianul maghiar János Bolyai. Oferă programe de studiu pe trei linii principale, în limba română, limba maghiară și limba germană, dar și module de studiu în engleză, franceză și italiană.[6][7] </p>
 </div>
