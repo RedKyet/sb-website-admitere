@@ -35,7 +35,7 @@ require('chatsidebar.php');
 ************* Free for Commercial Use, full terms at  http://simplemaps.com/resources/svg-license ************
 ************* Attribution is appreciated! http://simplemaps.com ***************************
 -->
-<h1 class="text">Harta</h1>
+<h1 class="text">Gaseste-ti univesitatea ta!</h1>
 <div style="margin: 0 50">
 <svg baseprofile="tiny" fill="#7c7c7c" stroke="#ffffff" stroke-linecap="round" stroke-linejoin="round" version="1.2" viewbox="0 0 1500 705" xmlns="http://www.w3.org/2000/svg" id="ro-svg" >
 

@@ -6,13 +6,13 @@ $path = 'userdata/friends/'.$username.'.txt';
 
 
 if(file_exists($path)){
-  if ( 0 == filesize($path))
+  if ( 0 != filesize($path))
 {
-    // file is empty
-}
-  $friends=json_decode(file_get_contents($path));
+    $friends=json_decode(file_get_contents($path));
 for($i=0; $i<sizeof($friends); $i++){
   $ppl[$i]=$friends[$i][0];
+}
+  
 }
 }
 

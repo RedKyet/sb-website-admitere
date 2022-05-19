@@ -145,7 +145,7 @@ fetch('getonlineusers.php?username='+username)
           string=string+'<li>';
         string=string+'<form action="" method="post" class="us1"> <input type="hidden" id="action" name="action" value="sms"><input type="hidden" id="id" name="id" value="'+data[i]+'"><input class="button" type="submit" class="overlay_btn4" name="button" value="'+data[i]+'"/></form>';
   string=string+'<form action="" method="post" class="us2"> <input type="hidden" id="action" name="action" value="add"><input type="hidden" id="fr" name="fr" value="'+data[i]+'"><input type="submit" class="button" class="overlay_btn4" name="button2" value="add"/></form>';
-  string=string+'<br>';
+  string=string+'<br><br><br>';
   
         string=string+'</li>';
         }
